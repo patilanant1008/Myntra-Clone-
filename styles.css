@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Assistant, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  height: 45px;
+  width: 100%;
+  background-color:var(--primary-color);
+  align-items: center;
+  box-shadow: rgba(186, 184, 184, 0.15) 1.95px 1.95px 2.6px;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.myntra_home {
+  height: 25px;
+}
+
+
+
+.action_bar {
+  margin-right: 2%;
+}
+
+
+
+.right ul li:hover {
+  border-bottom: 4px solid #ff3f6c;
+}
+
+.nav_bar a sup {
+  color: #ff3f6c;
+  font-family: Assistant;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 5rem;
+  height: 100%;
+}
+
+.left {
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.checkBtn {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.checkBtn {
+  cursor: pointer;
+  font-size: 30px;
+  float: right;
+  color: #ed1e79;
+  line-height: 80px;
+}
+
+
+.right {
+
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.right ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+}
+
+.right ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.right ul li a {
+  padding: 5px 5px;
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 1s;
+
+
+}
+
+
+
+
+
+.search_bar {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.search_input {
+  background-color:var(--primary-color);
+  color: var(--secondary-color);
+  height: 20px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  padding: 2px;
+  text-align: center;
+  width: 230px;
+}
+
+input::placeholder {
+  font-size: 12px;
+}
+
+.search_icon {
+  height: 20px;
+  background-color:var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: 300;
+  border-radius: 4px 0 0 4px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+
+#icon{
+  width: 30px;
+  cursor: pointer;
+}
+
+.dark_button{
+  position: sticky;
+    margin-left: 2%;
+    bottom: 4%;
+}
+
+.action_bar {
+  display: flex;
+  padding: 2px;
+}
+
+.action_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin: 0px 5px;
+}
+
+.action_name {
+  font-size: 8px;
+  cursor: pointer;
+  color:var(--secondary-color);
+}
+
+.action_icon {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:425px){
+  .search_input{
+    width: 100px;
+  }
+  .search_bar{
+    width: 100px;
+  }
+
+  /* .sale_item{
+    height: 200px;
+    width: 150px;
+  } */
+}
+
+@media screen and (max-width:680px) {
+
+  .myntra_home {
+    display: none;
+  }
+
+  .search_bar {
+    margin-left: 0px;
+  }
+
+  .list {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(75, 73, 76);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 4rem;
+    left: 100%;
+    transition: all 1s;
+    z-index: 100;
+    position:fixed;
+
+  }
+
+  .right ul li {
+    height: 30px;
+    width: fit-content;
+  }
+
+  #check {
+    display: none;
+  }
+
+  .checkBtn {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .action_icon {
+    font-size: 5px;
+  }
+
+  #check:checked~ul {
+    left: 0%;
+  }
+
+}
+
+.slideshow-container {
+  position: relative;
+  /* max-width: 1000px; */
+  margin: auto;
+  margin-top: 3%;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:var(--primary-color);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.heading{
+  margin-left: 4%;    
+  color:var(--secondary-color);
+  margin-top: 4%;
+
+}
+.carousel-container {
+  position: relative;
+  /* max-width: 1000px; */
+  margin: auto;
+  margin-top: 3%;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel-slide img {
+  width: calc(100% / 4 - 10px);
+  height: auto;
+  margin: 0 5px;
+}
+
+#icon{
+  width: 30px;
+  cursor: pointer;
+}
+
+:root{
+  --primary-color: #edf2fc;
+  --secondary-color :#2e2c2c;
+}
+.dark_theme{
+  --primary-color:#000;
+  --secondary-color:#0cc;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:var(--primary-color);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.category_heading {
+  text-transform: uppercase;
+  color:var(--secondary-color);
+  letter-spacing: .15em;
+  font-size: 1.8em;
+  margin: 50px 0 10px 30px;
+  max-height: 5em;
+  font-weight: 700;
+}
+
+.category_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sale_item {
+width: 250px;
+}
+
+.footer_container {
+padding: 30px 0px 40px 0px;
+background: var(--primary-color);
+display: flex;
+justify-content: space-evenly;
+}
+
+.footer_column {
+display: flex;
+flex-direction: column;
+}
+
+.footer_column h3 {
+color: var(--secondary-color);
+font-size: 14px;
+margin-bottom: 25px;
+}
+
+.footer_column a {
+color: var(--secondary-color);
+font-size: 15px;
+text-decoration: none;
+padding-bottom: 5px;
+}
+
+.copyright {
+color:var(--secondary-color);
+text-align: end;
+padding: 15px;
+}
+
+body{
+background-color: var(--primary-color);
+}
