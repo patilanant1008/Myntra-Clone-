@@ -20,13 +20,9 @@ header {
   height: 25px;
 }
 
-
-
 .action_bar {
   margin-right: 2%;
 }
-
-
 
 .right ul li:hover {
   border-bottom: 4px solid #ff3f6c;
@@ -39,9 +35,6 @@ header {
   font-weight: 600;
   text-transform: uppercase;
 }
-
-
-
 
 .navbar {
   display: flex;
@@ -72,7 +65,6 @@ header {
   line-height: 80px;
 }
 
-
 .right {
 
   display: flex;
@@ -100,13 +92,7 @@ header {
   cursor: pointer;
   text-decoration: none;
   transition: all 1s;
-
-
 }
-
-
-
-
 
 .search_bar {
   display: flex;
@@ -138,7 +124,6 @@ input::placeholder {
   padding: 2px;
   cursor: pointer;
 }
-
 
 #icon{
   width: 30px;
@@ -175,7 +160,7 @@ input::placeholder {
   cursor: pointer;
 }
 
-
+/* media queries added here to make the nav bar responsive  */
 @media screen and (max-width:425px){
   .search_input{
     width: 100px;
@@ -183,11 +168,6 @@ input::placeholder {
   .search_bar{
     width: 100px;
   }
-
-  /* .sale_item{
-    height: 200px;
-    width: 150px;
-  } */
 }
 
 @media screen and (max-width:680px) {
@@ -243,7 +223,6 @@ input::placeholder {
 
 .slideshow-container {
   position: relative;
-  /* max-width: 1000px; */
   margin: auto;
   margin-top: 3%;
 }
@@ -321,7 +300,6 @@ input::placeholder {
 }
 .carousel-container {
   position: relative;
-  /* max-width: 1000px; */
   margin: auto;
   margin-top: 3%;
   overflow: hidden;

@@ -1,3 +1,4 @@
+// javascript code to make the left side bar static after sometime 
 const main = document.querySelector('.main');
 const left = document.querySelector('.left_navbar');
 

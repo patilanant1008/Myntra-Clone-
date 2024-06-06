@@ -1,3 +1,5 @@
+// contains all the logic used for the slideshow and etc.
+
 function myFunction() {
   let element = document.body;
   element.classList.toggle("dark");
